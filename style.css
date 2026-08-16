@@ -1,0 +1,160 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background: #b0b0b0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    width: 70%;
+    /* height: 600px; */
+    background: #fff;
+    border-radius: 7px;
+    border: 1px solid #ccc;
+}
+
+.top-panel {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 40px;
+}
+
+.middle-panel {
+    border: 1px solid #ccc;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.middle-panel .col {
+    width: 300px;
+    border-right: 1px solid #ccc;
+    padding: 20px 30px;
+    position: relative;
+}
+
+.col div {
+    font-size: 17px;
+    font-weight: 550;
+    margin-bottom: 6px;
+}
+
+.price {
+    font-size: 16px;
+    font-weight: 550;
+    color: #969595;
+}
+
+button {
+    line-height: 50px;
+    border-radius: 30px;
+    padding: 0 30px;
+    width: 100%;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    background-color: #e4e3e3;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    margin: 22px 0;
+}
+
+.col:nth-child(2) button {
+    background: rgb(33, 153, 121);
+}
+.col:nth-child(2) button:hover {
+    background: rgb(26, 127, 100);
+}
+
+.col:nth-child(3) button {
+    background: rgb(27, 126, 207);
+}
+
+
+.col:nth-child(3) button:hover {
+    background: rgb(15, 99, 168);
+}
+
+.title {
+    font-weight: 550;
+    font-size: 14px;
+    color: #686767;
+    margin-bottom: 10px;
+}
+
+.col ul {
+    list-style: none;
+}
+
+.col ul li {
+    font-size: 14px;
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+}
+.col ul li::before {
+    content: "✓";
+    font-size: 15px;
+    margin-right: 20px;
+    
+}
+
+.plan {
+    font-size: 13px;
+    color: #888;
+}
+
+.col:nth-child(1) .plan {
+    position: absolute;
+    bottom: 12px;
+
+}
+
+.footer {
+    text-align: center;
+}
+
+.footer p {
+    padding: 20px 0;
+    font-size: 15px;
+}
+
+.closeBtn {
+    font-size: 20px;
+    cursor: pointer;
+    font-weight: 400;
+    color: #a6a3a3;
+
+}
+
+
+@media (max-width: 768px) {
+
+    .container {
+        width: 90%;
+    }
+
+    .middle-panel {
+        flex-wrap: wrap;
+    }
+
+    .middle-panel .col {
+        width: 100%;
+        border-bottom: 1px solid #ccc;
+        padding: 40px 30px;
+    }
+
+}
